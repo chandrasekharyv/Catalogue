@@ -7,9 +7,9 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Unit testcase') {
+        stage('Unit test') {
             steps {
-                echo 'this is unit test'
+                echo 'this is unit test case'
             } 
         }
                    
