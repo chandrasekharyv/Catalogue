@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Unit testcase') {
             steps {
-                echo ''
+                echo 'this is unit test'
             } 
         }
                    
