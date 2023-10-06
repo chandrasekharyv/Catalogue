@@ -22,7 +22,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'ls -ltr'
-                sh 'pwd'
+                sh 'zip -r ./* exclude=.git'
             }
         }
 
@@ -31,7 +31,8 @@ pipeline {
 
     post {
         always {
-            deleteDir()
+            echo 'clean up workspace'
+            // deleteDir()
         }
     }
     
