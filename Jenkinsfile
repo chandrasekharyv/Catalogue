@@ -25,6 +25,15 @@ pipeline {
                 sh 'pwd'
             }
         }
-                   
+
+        
     }
+
+    post {
+        always {
+            deleteDir()
+        }
+    }
+    
+    
 }
