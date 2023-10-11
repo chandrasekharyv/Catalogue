@@ -1,6 +1,7 @@
 const instana = require('@instana/collector');
 // init tracing
 // MUST be done before loading anything else!
+// adding some changes from dev team 
 instana({
     tracing: {
         enabled: true
